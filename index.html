@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Legend of Zelda</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <header id="top" class="main-header">
+      <span class="title">Journey Through the Legend of Zelda series</span>
+      <h1>Zelda, Intro</h1>
+      <div id="imageContainer">
+        <!-- <img src="Images/Arrow.png" alt="arrow"> -->
+        <img class="mySlides" src="Images/mask.jpg">
+        <img class="mySlides" src="Images/skyward.jpg">
+      </div>
+      <div class="sfbww">
+        <!-- <button class="btn">Button</button> -->
+        <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+        <!-- <button class="btn">Button</button> -->
+        <button class="btn-right" onclick="plusDivs(+1)">&#10095;</button>
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+        </script>
+
+      </div>
+
+    </header>
+
+		<div class="primary-content t-border">
+			<p class="intro">
+				The Legend of Zelda is a good series.  It is my favorite series.  Here is a glorified wiki on it.
+			</p>
+			<a class="callout" href="#more">Find out more</a>
+
+			<a class="callout" href="#wildlife">Check out the games</a>
+		</div>
+    <!-- End .primary-content -->
+
+		<div class="secondary-content t-border">
+      <div>
+        <img src="img/resort.jpg" alt="Games">
+        <h3>More games</h3>
+        <p>
+          Here are some more games in the series:
+        </p>
+        <ul>
+          <li><a href="#Mask">Majora's Mask</a></li>
+          <li><a href="#Princess">Twilight Princess</a></li>
+          <li><a href="#Wild">Breath of the Wild</a></li>
+          <li><a href="#Wind">Wind Waker</a></li>
+          <li><a href="#Time>Ocarina of Time</a></li>
+        </ul>
+      </div>
+<!-- not needed -->
+		<footer class="main-footer">
+			<p>All rights reserved by <a href="#">Nintendo</a>.</p>
+			<a href="#top">Back to top &raquo;</a>
+		</footer>
+  </body>
+</html>
