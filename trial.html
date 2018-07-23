@@ -3,101 +3,104 @@
 
   <head>
 
-    <div class="navbar">
-     <a href="#home">Home</a>
-     <a href="#news">News</a>
-     <div class="dropdown">
-       <button class="dropbtn">List of Games
-         <i class="fa fa-caret-down"></i>
-       </button>
-       <div class="dropdown-content">
-         <a href="#">Ocarina of Time</a>
-         <a href="#">Majoras Mask</a>
-         <a href="#">Wind Waker</a>
-         <a href="#">Twilight Princess</a>
-         <a href="#">Breath of the Wild</a>
-       </div>
-     </div>
-   </div>
+    <link rel="stylesheet" href="trial.css">
+    <script src="trial.js"></script>
 
-  <link rel="stylesheet" href="trial.css">
+    <title>Hyrule Hub</title>
 
-  <title>Hyrule Hub</title>
-  <!-- <h1 class="hyrule"><a href="#">Hyrule Hub</a></h1> -->
-  <header id="top" class="main-header">
-    <!-- <span class="title">Hyrule Hub</span> -->
-    <!-- <h1>Hyrule Hub</h1> -->
-  <div id="imageContainer">
-    <img class="mySlides" src="Images/mask.jpg">
-    <img class="mySlides" src="Images/skyward.jpg">
-      <!-- <img class="mySlides" src="Images/mask.jpg">
-      <img class="mySlides" src="Images/mask.jpg"> -->
+  </head>
 
-  </div>
-    <div class="sfbww">
-      <!-- <button class="btn">Button</button> -->
-      <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
-      <!-- <button class="btn">Button</button> -->
-      <button class="btn-right" onclick="plusDivs(+1)">&#10095;</button>
-
-    </div>
-
-    <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} ;
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-    }
-    </script>
   <body>
-  <!--  <div class="wrapper"> -->
 
-    <div class="wrap">
-    <header class="sub-header">
-      <div class="container">
-      <!-- <form action="index.html" method="post";> -->
-        <h1 class="hyrule"><a href="#">Hyrule Hub</a></h1>
-        <!-- <ul class="main-nav">
-          <li><a href="#">Wind Waker</a></li>
-          <li><a href="#">Ocarina</a></li>
-          <li><a href="#">Majoras Mask</a></li>
-          <li><a href="#">Skyward Sword</a></li>
-        </ul> -->
+    <header id="top" class="main-header">
 
-    </div>
-    </header>
-      <fieldset> <!-- groups elements in a box -->
+      <nav class="navbar">
+       <a href="#home">Home</a>
+       <a href="#news">News</a>
+       <div class="dropdown">
+         <button class="dropbtn">List of Games
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="#">Ocarina of Time</a>
+           <a href="#">Majoras Mask</a>
+           <a href="#">Wind Waker</a>
+           <a href="#">Twilight Princess</a>
+           <a href="#">Breath of the Wild</a>
+         </div>
+       </div>
+     </nav>
+     <h1 class="hyrule"><a href="#">Hyrule Hub</a></h1>
+   </header>
 
-        <legend><span class="number"></span> </legend> <!-- title and number for fieldset -->
+    <!-- <div id="imageContainer"> -->
 
-        <p>Here is the basic info on the Legend of Zelda series</p>
+      <!-- Slideshow container -->
+<div class="slideshow-container">
 
-      </fieldset>
+ <!-- Full-width images with number and caption text -->
+ <div class="mySlides fade" style="display: block;">
+   <div class="numbertext">1 / 3</div>
+   <img class="images" src="https://images3.alphacoders.com/612/612032.jpg" style="width:100%">
+   <div class="text">Caption Text</div>
+ </div>
 
-      <h2>
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 3</div>
+   <img class="images" src="https://images5.alphacoders.com/317/317301.jpg" style="width:100%">
+   <div class="text">Caption Two</div>
+ </div>
 
-      </h2>
+ <div class="mySlides fade">
+   <div class="numbertext">3 / 3</div>
+   <img class="images" src="http://jonvilma.com/images/the-legend-of-zelda-ocarina-4.jpg" style="width:100%">
+   <div class="text">Caption Three</div>
+ </div>
 
-    </form>
+ <!-- Next and previous buttons -->
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div id="dotContainer">
+  <div style="text-align:center">
+   <span class="dot" onclick="currentSlide(1)"></span>
+   <span class="dot" onclick="currentSlide(2)"></span>
+   <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+    <!-- </div> -->
+
+<div id="content">
+
+      <div class="wrapper">
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+      </div>
+
+      <div class="primary col">
+        <h2>zelda</h2>
+        <p>blah blah blah</p>
+
+      </div>
+
+      <div class="secondary col">
+        <h2>zelda</h2>
+        <p>blah blah blah</p>
+      </div>
 
 </div>
+
     <footer class="main-footer">
-      <p> here is info for the footer</p>
+
+      <p>Copywrite Andrew J Fredrickson</p>
+
     </footer>
 
   </body>
 
-  </head>
 </html>
